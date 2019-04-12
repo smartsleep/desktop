@@ -24,7 +24,7 @@ function createWindow () {
     }
   })
 
-  win.loadURL('http://localhost:8080/index.php/admin')
+  win.loadURL('https://apismartsleep.sund.ku.dk/index.php/admin')
 }
 
 app.on('ready', createWindow)

@@ -1,16 +1,23 @@
 {
   "name": "survey",
   "version": "1.0.0",
-  "description": "",
+  "description": "SmartSleep survey configuration tool",
+  "productName": "SmartSleep Survey",
   "main": "src/index.js",
   "scripts": {
     "build": "node src/installer.js",
-    "start": "electron ./src"
+    "start": "electron ./src",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "dk.ku.smartsleep.desktop.survey"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^4.0.6",
+    "electron-builder": "^20.38.5",
     "electron-winstaller": "^2.7.0"
   },
   "dependencies": {
